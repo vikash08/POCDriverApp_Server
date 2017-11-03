@@ -24,6 +24,8 @@ namespace POCDriverAppService.Models
 
         public DbSet<TodoItem> TodoItems { get; set; }
 
+        public DbSet<Goodsevent> GoodsEvent { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Add(
